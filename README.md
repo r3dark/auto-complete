@@ -29,7 +29,7 @@ by Gradle.
 Clone the repository to your local:
 
 ```sh
-git clone https://github.com/r3dark/auto-complete.git
+$ git clone https://github.com/r3dark/auto-complete.git
 ```
 
 To set up the project, open terminal at root 
