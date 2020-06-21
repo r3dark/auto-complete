@@ -36,7 +36,8 @@ To set up the project, open terminal at root
 of project and execute : 
 
 ```sh
-$ gradle build --refresh-dependencies
+$ gradle clean test
+$ gradle clean build --refresh-dependencies
 ```
 
 This will run the test suite, 
@@ -49,7 +50,7 @@ To run this project, either import it in
 at root of the project :
 
 ```sh
-$ java -jar build/libs/auto-complete-0.0.1-SNAPSHOT.jar
+$ java -jar build/libs/auto-complete-1.0-SNAPSHOT.jar
 ```
 
 ### How to use
