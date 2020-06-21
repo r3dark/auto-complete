@@ -25,6 +25,13 @@ by Gradle.
 - Git 2.21.0
 
 ### Setup
+
+Clone the repository to your local:
+
+```sh
+git clone https://github.com/r3dark/auto-complete.git
+```
+
 To set up the project, open terminal at root 
 of project and execute : 
 
