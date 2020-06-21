@@ -1,0 +1,60 @@
+{
+	"info": {
+		"_postman_id": "b72648a3-7179-4801-9166-e18b03c7b91e",
+		"name": "Auto Complete Application",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Fetch all countries",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/auto-complete/countries/all",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auto-complete",
+						"countries",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch country names based on keyword and limit",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/auto-complete/countries?keyword=ab&limit=5",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auto-complete",
+						"countries"
+					],
+					"query": [
+						{
+							"key": "keyword",
+							"value": "ab"
+						},
+						{
+							"key": "limit",
+							"value": "5"
+						}
+					]
+				},
+				"description": "Fetch country names which contains the keyword entered based on limit. If limit is not provided, all the values based on keyword matching will be returned."
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
