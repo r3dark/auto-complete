@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -53,7 +54,28 @@ public class CountryService {
 	public String fetchAllCountries() throws Exception {
 
 		List<Country> countries = countryDao.getAllCountries();
+
+//		sortCountriesBasedOnCode(countries);
+
 		countryHolder.setCountries(countries);
 		return OBJECT_MAPPER.writeValueAsString(countryHolder);
+	}
+
+	private void sortCountriesBasedOnCode(List<Country> countries) {
+
+//		countries.sort(new Comparator<Country>() {
+//			@Override
+//			public int compare(Country country1, Country country2) {
+//				return country1.getCode().compareTo(country2.getCode());
+//			}
+//		});
+//
+//		OR
+//
+//		countries.sort((country1, country2) -> country1.getCode().compareTo(country2.getCode()));
+//
+//		OR
+//
+//		countries.sort(Comparator.comparing(Country::getCode));
 	}
 }
